@@ -1,4 +1,4 @@
-# earthequakes-streamlit
+# Warsaw_flat_rent_price_app
 # Warsaw flat rental price prdiction app
 
 The deployed web app is live at https://earthquakes-streamlit.herokuapp.com
