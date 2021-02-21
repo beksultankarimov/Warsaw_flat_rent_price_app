@@ -26,7 +26,7 @@ if st.checkbox("Show how to use the app/More info", False):
 st.write('___________________________________________________________________________________________________________________________')
 st.sidebar.header('User Input Features')
 
-decision_box = st.sidebar.selectbox('Select the mode:',('Predict the flat by your budget','Predict the price of flat'))
+decision_box = st.sidebar.selectbox('Select the mode:',('Predict the price of flat','Predict the flat by your budget'))
 if decision_box == 'Predict the price of flat':
     #def user_input_features():
     district = st.sidebar.selectbox('District',('Bemowo','Białołęka','Bielany', 'Centrum', 'Mokotów', 'Ochota',
@@ -234,6 +234,8 @@ st.write('Source code:', '''[GitHub](https://github.com/beksultankarimov/Warsaw_
 st.write('Dataset is available on ', '''[Kaggle](https://www.kaggle.com/beksultankarimov/warsaw-flat-rent-prices)''',' and on ',
     '''[GitHub](https://github.com/beksultankarimov/Warsaw_flat_rent_price_app/blob/main/data_clean.csv)''')
 st.write('This project was done by: **Beksultan Karimov**')
+st.write('Check my other ' , '''[Earthquake monitor app](https://earthquakes-streamlit.herokuapp.com)''')
+st.write('''\n[Get my CV](https://drive.google.com/file/d/1yrBoLqFLD_0Qxa10lM8Zjhx2w3GGX4xl/view?usp=sharing)''')
 st.write('''\n[LinkedIn](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''')
 st.write('''[Facebook](https://www.facebook.com/profile.php?id=100009130718211)''')
 st.write('''[GitHub](https://github.com/beksultankarimov)''')
