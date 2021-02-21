@@ -116,6 +116,8 @@ if decision_box == 'Predict the price of flat':
     prediction = int(load_model.predict(input_df))
     st.write('''# Calculated rental price =  ''',prediction, '''PLN''')
     st.write("Please keep in mind that flats require additional deposit equal to 100% of rental fee. So in total you need: ", prediction*2, 'PLN to rent a flat')
+    st.write('___________________________________________________________________________________________________________________________')
+    st.write('Prediction was done based on **XGBoost** model with **99%** accuracy. Data obtained from otodom.pl.')
 else:
     #District option for multiselect
     correct_dist = ['district_ Włochy', 'district_ Mokotów', 'district_ Bielany', 'district_ Targówek', 'district_ Ochota',
@@ -227,11 +229,10 @@ else:
 #visually dividing section
 st.write('___________________________________________________________________________________________________')
 #footer
-st.write('Prediction was done based on **XGBoost** model with **99%** accuracy. Data obtained from otodom.pl.')
-st.write('Source code:','''[Kaggle](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''',' or ',
-    '''[GitHub](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''')
-st.write('Dataset is available on ', '''[Kaggle](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''',' and on ',
-    '''[GitHub](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''')
+
+st.write('Source code:', '''[GitHub](https://github.com/beksultankarimov/Warsaw_flat_rent_price_app)''')
+st.write('Dataset is available on ', '''[Kaggle](https://www.kaggle.com/beksultankarimov/warsaw-flat-rent-prices)''',' and on ',
+    '''[GitHub](https://github.com/beksultankarimov/Warsaw_flat_rent_price_app/blob/main/data_clean.csv)''')
 st.write('This project was done by: **Beksultan Karimov**')
 st.write('''\n[LinkedIn](https://www.linkedin.com/in/beksultan-karimov-6a4296179/)''')
 st.write('''[Facebook](https://www.facebook.com/profile.php?id=100009130718211)''')
